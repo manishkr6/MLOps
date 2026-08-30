@@ -9,6 +9,12 @@ data = {'Name': ['Alice', 'Bob', 'Charlie'],
 
 df = pd.DataFrame(data)
 
+# Adding new row to df for V2
+new_row_loc = {"Name": 'GF1',
+               'Age': 20,
+               'City': 'City1'}
+df.loc[len(df.index)] = new_row_loc
+
 # 1. Get the exact folder where mycode.py is located
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
