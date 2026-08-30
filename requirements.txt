@@ -1,0 +1,17 @@
+# Core data science / ML
+pandas
+numpy
+scikit-learn
+PyYAML
+matplotlib
+seaborn
+
+# DVC and cloud integration
+boto3
+dvc
+
+# Notebook support
+jupyter
+ipykernel
+nltk
+xgboost
