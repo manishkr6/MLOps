@@ -28,4 +28,9 @@ ML Pipeline using DVC & AWS S3/logs/
 ML Pipeline using DVC & AWS S3/reports/
 ML Pipeline using DVC & AWS S3/experiments/
 
-# If you want to keep model/data files tracked by DVC, do not ignore the .dvc files themselves.
+# MLflow generated files and tracking data
+MLFlow/mlartifacts/
+MLFlow/mlflow.db
+
+# Generated plots/outputs in the source folder
+MLFlow/src/confusion_matrix.png
