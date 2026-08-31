@@ -41,3 +41,41 @@
 2026-08-31 14:41:04,537 - model_evaluation - INFO - ============================================================
 2026-08-31 14:41:04,537 - model_evaluation - INFO - Model Evaluation Completed Successfully
 2026-08-31 14:41:04,537 - model_evaluation - INFO - ============================================================
+2026-08-31 15:32:48,852 - model_evaluation - INFO - ============================================================
+2026-08-31 15:32:48,852 - model_evaluation - INFO - Starting Model Evaluation
+2026-08-31 15:32:48,852 - model_evaluation - INFO - ============================================================
+2026-08-31 15:32:48,852 - model_evaluation - INFO - Parameters loaded from params.yaml
+2026-08-31 15:32:48,976 - model_evaluation - INFO - Model loaded successfully from models/model.pkl
+2026-08-31 15:32:48,977 - model_evaluation - INFO - Test data loaded successfully from data/processed/test_tfidf.csv
+2026-08-31 15:32:48,977 - model_evaluation - INFO - Test data shape: (1101, 36)
+2026-08-31 15:32:48,977 - model_evaluation - INFO - X_test shape: (1101, 35)
+2026-08-31 15:32:48,977 - model_evaluation - INFO - y_test shape: (1101,)
+2026-08-31 15:32:48,987 - model_evaluation - INFO - Model evaluation completed
+2026-08-31 15:32:48,987 - model_evaluation - INFO - Accuracy  : 0.9401
+2026-08-31 15:32:48,987 - model_evaluation - INFO - Precision : 0.8629
+2026-08-31 15:32:48,987 - model_evaluation - INFO - Recall    : 0.6859
+2026-08-31 15:32:48,987 - model_evaluation - INFO - F1 Score  : 0.7643
+2026-08-31 15:32:48,987 - model_evaluation - INFO - AUC       : 0.9165
+2026-08-31 15:32:48,987 - model_evaluation - INFO - Metrics saved successfully to reports/metrics.json
+2026-08-31 15:32:49,086 - model_evaluation - INFO - ============================================================
+2026-08-31 15:32:49,086 - model_evaluation - INFO - Model Evaluation Completed Successfully
+2026-08-31 15:32:49,086 - model_evaluation - INFO - ============================================================
+2026-08-31 15:33:06,354 - model_evaluation - INFO - ============================================================
+2026-08-31 15:33:06,354 - model_evaluation - INFO - Starting Model Evaluation
+2026-08-31 15:33:06,354 - model_evaluation - INFO - ============================================================
+2026-08-31 15:33:06,355 - model_evaluation - INFO - Parameters loaded from params.yaml
+2026-08-31 15:33:06,474 - model_evaluation - INFO - Model loaded successfully from models/model.pkl
+2026-08-31 15:33:06,475 - model_evaluation - INFO - Test data loaded successfully from data/processed/test_tfidf.csv
+2026-08-31 15:33:06,475 - model_evaluation - INFO - Test data shape: (1101, 36)
+2026-08-31 15:33:06,476 - model_evaluation - INFO - X_test shape: (1101, 35)
+2026-08-31 15:33:06,476 - model_evaluation - INFO - y_test shape: (1101,)
+2026-08-31 15:33:06,485 - model_evaluation - INFO - Model evaluation completed
+2026-08-31 15:33:06,485 - model_evaluation - INFO - Accuracy  : 0.9401
+2026-08-31 15:33:06,485 - model_evaluation - INFO - Precision : 0.8629
+2026-08-31 15:33:06,485 - model_evaluation - INFO - Recall    : 0.6859
+2026-08-31 15:33:06,485 - model_evaluation - INFO - F1 Score  : 0.7643
+2026-08-31 15:33:06,485 - model_evaluation - INFO - AUC       : 0.9165
+2026-08-31 15:33:06,485 - model_evaluation - INFO - Metrics saved successfully to reports/metrics.json
+2026-08-31 15:33:06,586 - model_evaluation - INFO - ============================================================
+2026-08-31 15:33:06,586 - model_evaluation - INFO - Model Evaluation Completed Successfully
+2026-08-31 15:33:06,586 - model_evaluation - INFO - ============================================================
