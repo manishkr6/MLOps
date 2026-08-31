@@ -6,3 +6,16 @@
 2026-08-30 18:53:56,099 - data_ingestion - DEBUG - Data loaded from https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv
 2026-08-30 18:53:56,100 - data_ingestion - DEBUG - Data preprocessing completed
 2026-08-30 18:53:56,115 - data_ingestion - DEBUG - Train and test data saved to ./data/raw
+2026-08-31 15:02:45,373 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-08-31 15:02:45,644 - data_ingestion - ERROR - Unexpected error occurred while loading the data: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>
+2026-08-31 15:02:45,645 - data_ingestion - ERROR - Failed to complete the data ingestion process: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>
+2026-08-31 15:07:21,424 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-08-31 15:07:21,486 - data_ingestion - WARNING - SSL certificate verification failed for https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv; retrying with an unverified context.
+2026-08-31 15:07:22,359 - data_ingestion - DEBUG - Data loaded from https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv
+2026-08-31 15:07:22,361 - data_ingestion - DEBUG - Data preprocessing completed
+2026-08-31 15:07:22,372 - data_ingestion - DEBUG - Train and test data saved to ./data/raw
+2026-08-31 15:08:15,088 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-08-31 15:08:15,143 - data_ingestion - WARNING - SSL certificate verification failed for https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv; retrying with an unverified context.
+2026-08-31 15:08:15,400 - data_ingestion - DEBUG - Data loaded from https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv
+2026-08-31 15:08:15,402 - data_ingestion - DEBUG - Data preprocessing completed
+2026-08-31 15:08:15,417 - data_ingestion - DEBUG - Train and test data saved to ./data/raw

@@ -1,5 +1,7 @@
 import pandas as pd
 import os
+import ssl
+from urllib.request import urlopen
 from sklearn.model_selection import train_test_split
 import logging
 import yaml
@@ -48,7 +50,17 @@ def load_params(params_path: str) -> dict:
 def load_data(data_url: str) -> pd.DataFrame:
     """Load data from a CSV file."""
     try:
-        df = pd.read_csv(data_url)
+        try:
+            df = pd.read_csv(data_url)
+        except Exception as e:
+            error_text = str(e)
+            if 'CERTIFICATE_VERIFY_FAILED' not in error_text and 'SSL' not in error_text:
+                raise
+            logger.warning('SSL certificate verification failed for %s; retrying with an unverified context.', data_url)
+            context = ssl._create_unverified_context()
+            with urlopen(data_url, context=context) as response:
+                df = pd.read_csv(response)
+
         logger.debug('Data loaded from %s', data_url)
         return df
     except pd.errors.ParserError as e:

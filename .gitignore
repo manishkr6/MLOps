@@ -5,3 +5,27 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# OS / editor files
+.DS_Store
+.idea/
+.vscode/
+
+# DVC local cache and artifacts
+.dvc/cache/
+.dvc/tmp/
+.dvc/config.local
+
+# Project-generated ML artifacts
+DVC/data/
+DVC/S3/
+ML Pipeline using DVC & AWS S3/data/
+ML Pipeline using DVC & AWS S3/models/
+ML Pipeline using DVC & AWS S3/logs/
+ML Pipeline using DVC & AWS S3/reports/
+ML Pipeline using DVC & AWS S3/experiments/
+
+# If you want to keep model/data files tracked by DVC, do not ignore the .dvc files themselves.
