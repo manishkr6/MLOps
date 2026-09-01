@@ -20,3 +20,9 @@ xgboost
 dvclive
 mlflow
 dagshub
+
+# Web app framework
+streamlit
+
+# Testing
+pytest
