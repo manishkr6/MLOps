@@ -21,6 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, random
 max_depth = 10
 n_estimators = 5
 
+mlflow.autolog()
 mlflow.set_experiment("Exp1")
 
 with mlflow.start_run():
@@ -29,10 +30,6 @@ with mlflow.start_run():
 
   y_pred = rf.predict(X_test)
   accuracy = accuracy_score(y_test, y_pred)
-
-  mlflow.log_metric("accuracy", accuracy)
-  mlflow.log_param("max_depth", max_depth)
-  mlflow.log_param("n_estimators", n_estimators)
 
   # Creating a confusion matrix plot
   cm = confusion_matrix(y_test, y_pred)
@@ -46,13 +43,9 @@ with mlflow.start_run():
   plt.savefig("confusion_matrix.png")
 
   # log artifact using mlflow 
-  mlflow.log_artifact("confusion_matrix.png")
   mlflow.log_artifact(__file__)
 
   # tags
   mlflow.set_tags({"Author": "Manish", "Project": "Wine Classification"})
-
-  # log the model
-  mlflow.sklearn.log_model(rf, "Random-Forest-Model")
 
   print(f"Accuracy: {accuracy}")
