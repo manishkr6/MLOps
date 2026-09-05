@@ -48,6 +48,23 @@ Built-in monitoring to detect when your model's performance degrades in producti
 
 ---
 
+## 📁 Folder Structure
+
+```text
+MLOps/
+├── CI/                             # Continuous Integration tests (app.py, _test.py)
+├── Docker/                         # Dockerization configurations (dockerfile, app.py)
+├── DVC/                            # Data Version Control basic setup
+├── Kubernetes/                     # K8s deployment manifests & templates
+├── ML Pipeline using DVC & AWS S3/ # End-to-end ML pipeline with DVC tracking
+├── MLFlow/                         # MLflow model tracking experiments & artifacts
+├── Prometheus&Grafana/             # Monitoring stack setup (Flask app, Prometheus, Grafana)
+├── requirements.txt                # Python dependencies
+└── README.md                       # Documentation
+```
+
+---
+
 ## 🏗️ Architecture
 
 ```mermaid
@@ -92,35 +109,4 @@ make setup
 docker-compose up -d
 ```
 
----
-
-## 💻 Usage
-
-Run the following command to trigger a sample training run:
-```bash
-python scripts/train.py --config config/train_config.yaml
 ```
-
-To view the MLflow UI and check your experiments:
-```bash
-open http://localhost:5000
-```
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/yourusername/MLOps/issues).
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-<div align="center">
-Made with ❤️ by the MLOps Team
-</div>
